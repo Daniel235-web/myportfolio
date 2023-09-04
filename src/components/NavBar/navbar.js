@@ -2,18 +2,17 @@ import React from 'react';
 import './navbar.css';
 import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contact.png';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar"> {/* Note the corrected attribute name */}
+    <nav className="navbar">
       <img src={logo} alt="logo" className="logo" width={50} height={50} />
       <div className="desktopMenu">
-        <Link to="home" className="desktopMenuListItem">Home</Link>
-        <Link to="about" className="desktopMenuListItem">About</Link>
-        <Link to="caseStudies" className="desktopMenuListItem">Case Studies</Link>
-        <Link to="blog" className="desktopMenuListItem">Blog</Link>
-        
+        <Link to="/" className="desktopMenuListItem">Home</Link>
+        <Link to="/skills" className="desktopMenuListItem">About</Link>
+        <Link to="/caseStudies" className="desktopMenuListItem">Case Studies</Link>
+        <Link to="/blog" className="desktopMenuListItem">Blog</Link>
       </div>
       <button className="desktopMenuBtn">
         <img src={contactImg} alt="" className="desktopMenuImg" />
