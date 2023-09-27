@@ -1,7 +1,9 @@
 import React from 'react';
 import './skills.css';
-import networkA from '../../assets/networkA.png';
+import down from '../../assets/down.png';
 import linux from '../../assets/linux.png';
+import network234 from '../../assets/network234.png'; 
+import prgram344 from '../../assets/prgram344.png';
 
 const Skills = () => {
     return (
@@ -31,15 +33,30 @@ My holistic perspective, blending development and networking, <br />ensures ever
                     </div>
                 </div>
                 <div className="skillBar">
-                    <img src={networkA} alt="networking" className="skillBarImg"/>
+                    <img src={down} alt="networking" className="skillBarImg"/>
                     <div className="skillBarText">
                         <h2>Network Administration</h2>
                         <p>These are sites that are down, and I ensure they are up in due time.</p>
+                    </div>
+                </div>
+                <div className="skillBar">
+                    <img src={network234} alt="networking" className="skillBarImg"/>
+                    <div className="skillBarText">
+                        <h2>Network Administration</h2>
+                        <p>These are sites that are down, and I ensure they are up in due time.</p>
+                    </div>
+                </div>
+                <div className="skillBar">
+                    <img src={prgram344} alt="networking" className="skillBarImg"/>
+                    <div className="skillBarText">
+                        <h2>PROGRAMMS</h2>
+                        <p>This is a snapshot of my programs.</p>
                     </div>
                 </div>
             </div>
         </section>
     )
 }
+
 
 export default Skills;

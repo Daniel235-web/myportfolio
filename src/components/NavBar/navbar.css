@@ -1,4 +1,5 @@
-.navbar{
+.navbar {
+    /* Your existing styles */
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
@@ -7,10 +8,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position:sticky;
     top: 0;
     z-index: 3;
+    
+    /* Faint gold glow effect */
+    background: rgba(255, 223, 0, 0.2); /* Set a semi-transparent gold background */
+    box-shadow: 0 0 10px 5px rgba(255, 223, 0, 0.5); /* Faint gold glow */
+    animation: goldGlow 1s infinite alternate; /* Add animation */
 }
+
+@keyframes goldGlow {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 223, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px 10px rgba(255, 223, 0, 0.9);
+    }
+}
+
+/* Rest of your styles for logo, menu items, buttons, etc. */
+
 
 .logo{
     object-fit: cover;
@@ -42,4 +60,11 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+}
+
+@media screen and (max-width: 793px) {
+    .desktopMenuListItem {
+        font-size: 14px; /* Adjust the font size as needed */
+        margin: 0 10px; /* Add spacing between items */
+    }
 }

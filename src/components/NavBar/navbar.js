@@ -11,13 +11,14 @@ const Navbar = () => {
       <div className="desktopMenu">
         <Link to="/" className="desktopMenuListItem">Home</Link>
         <Link to="/skills" className="desktopMenuListItem">About</Link>
-        <Link to="/caseStudies" className="desktopMenuListItem">Case Studies</Link>
-        <Link to="/blog" className="desktopMenuListItem">Blog</Link>
+        <Link to="/caseStudies" className="desktopMenuListItem">Case-Studies</Link>
+        <Link to="/clients" className="desktopMenuListItem">My Clients</Link>
       </div>
-      <button className="desktopMenuBtn">
+      {/* Link to the Contact page */}
+      <Link to="/clients" className="desktopMenuBtn">
         <img src={contactImg} alt="" className="desktopMenuImg" />
         Get In Touch
-      </button>
+      </Link>
     </nav>
   );
 }

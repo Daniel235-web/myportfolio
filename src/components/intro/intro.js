@@ -17,11 +17,11 @@ const Intro = () => {
         <p className="introPara">
           I am a skilled software engineer with decades of experience<br /> in creating innovative and high-quality software solutions.
           <br />
-          Spent 2 years in networking <a href="https://centdoor.com/">"Centdoor.com" </a> as a Noc.
-          <br />
           Working at <a href="https://souqify.com/">souqify.com</a> as a web scraper and a web developer .
           <br />
-          Currently, I'm focused on building a user-friendly human-centered websites at <a href="https://esoftresponse.com/">eSoftResponse </a>
+          Spent 2 years in networking <a href="https://centdoor.com/">"Centdoor.com" </a> as a Noc.
+          <br />
+          Currently, I'm focused on building a user-friendly human-centered websites <br /> at <a href="https://esoftresponse.com/">eSoftResponse </a>
         </p>
         <Link to="/hire-me"><button className="btn"><img src={btnImage} alt="Hire Me" className="btnImg"/>Hire Me</button></Link>
       </div>
