@@ -315,4 +315,11 @@
           opacity: 1;
         }
       }
-      
+ @media screen and (max-width:720px) {
+        .bg{
+           
+           left: 50px;
+                     
+        }
+       
+ }

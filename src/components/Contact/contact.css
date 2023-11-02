@@ -67,11 +67,39 @@
     flex-wrap: wrap;
 }
 .link {
-    object-fit: cover;
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
     margin: 0 0.75rem;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: glowing-rainbow 2s linear infinite, gradientShift 5s linear infinite;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    background: linear-gradient(45deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    background-size: 200% 200%;
 }
+
+@keyframes glowing-rainbow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
 .contactForm {
     margin: 1rem;
     display: flex;
@@ -90,7 +118,7 @@
     color: white;
     border: none;
     border-radius: 0.5rem;
-    background: rgb(0, 0, 0, );
+    background: rgba(255, 248, 248, 0.2);
 }
 .submitBtn {
     background: white;
