@@ -10,8 +10,7 @@
     justify-content: space-between;
     position:sticky;
     top: 0;
-    z-index: 3;
-    
+   
     /* Faint gold glow effect */
     background: rgba(255, 223, 0, 0.2); /* Set a semi-transparent gold background */
     box-shadow: 0 0 10px 5px rgba(255, 223, 0, 0.5); /* Faint gold glow */

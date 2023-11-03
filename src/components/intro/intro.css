@@ -4,7 +4,7 @@
     max-width: 75rem;
     margin: 0 auto;
     overflow:visible;
-    position:fixed;
+    position:relative;
 
 }
 .bg{
