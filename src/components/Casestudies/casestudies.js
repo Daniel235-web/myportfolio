@@ -1,6 +1,8 @@
 import React from 'react';
-import './casestudies.css'
-import Estate1 from '../../assets/estate1.jpg'
+import './casestudies.css';
+import Estate1 from '../../assets/estate1.jpg';
+import Soquify from '../../assets/soquiify (1).png';
+import Telecom from '../../assets/telecom.png';
 
 const Casestudies = () => {
   return (
@@ -15,6 +17,12 @@ const Casestudies = () => {
       <div className="caseImgs">
         <a href="https://mern-estate-ya0i.onrender.com">
           <img src={Estate1} alt="profile" className="caseImg" />
+        </a>
+        <a href="https://souqify.com/">
+          <img src={Soquify} alt="profile" className="caseImg" />
+        </a>
+        <a href="https://centdoor.com/index.php/services/">
+          <img src={Telecom} alt="profile" className="caseImg" />
         </a>
       </div>
     </section>

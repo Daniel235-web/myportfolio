@@ -23,7 +23,7 @@ const Intro = () => {
           <br />
           Currently, I'm focused on building a user-friendly human-centered websites <br /> at <a href="https://esoftresponse.com/">eSoftResponse </a>
         </p>
-        <Link to="/hire-me"><button className="btn"><img src={btnImage} alt="Hire Me" className="btnImg"/>Hire Me</button></Link>
+        <Link to="/clients"><button className="btn"><img src={btnImage} alt="Hire Me" className="btnImg"/>Hire Me</button></Link>
       </div>
       <img src={bg} alt="Profile" className="bg" />
     </section>

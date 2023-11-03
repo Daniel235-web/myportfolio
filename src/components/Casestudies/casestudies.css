@@ -25,6 +25,8 @@
   justify-content: center;
   width: 100vh;
   max-width: 65rem;
+ -webkit-animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+ animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .caseImg {
