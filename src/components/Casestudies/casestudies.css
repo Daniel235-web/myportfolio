@@ -8,34 +8,68 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding:0 1rem ;
+    padding: 0 1rem;
 }
 
 .casetitle {
-    margin:1rem 0 ;
+    margin: 1rem 0;
     font-size: 3rem;
 }
+
 .caseDesc {
     font-weight: 300;
     font-size: 1rem;
 }
+
 .caseImgs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vh;
-  max-width: 65rem;
- -webkit-animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
- animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line on small screens */
+    align-items: center;
+    justify-content: center;
+    max-width: 65rem;
 }
 
 .caseImg {
-  object-fit: cover;
-  height: 15rem;
-  margin: 0.5rem;
-  position: relative;
+    object-fit: cover;
+    height: 20rem; /* Set the desired image height */
+    width: 20rem; /* Set the desired image width */
+    margin: 0.5rem;
+    position: relative;
+    transition: transform 0.3s;
+
 }
 
+.caseImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%; 
+}
 
+.caseImg:hover {
+    transform: scale(1.05);
+}
 
+.caseDescOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 11, 13, 0.7); /* Adjust the alpha value for transparency */
+    color: #b8b8b8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s;
+    border-radius: 5%; 
+    font-size: medium;
+    
+}
+
+.caseImg:hover .caseDescOverlay {
+    opacity: 2;
+}
 
